@@ -1,0 +1,314 @@
+### Error Verifiying bytecode_2.4\test_augmentedAssign.pyc
+Code len differs in .<module>
+0	LOAD_CONST        '\naugmentedAssign.py -- source test pattern for augmented assigns\n\nThis source is part of the decompyle test suite.\n\ndecompyle is a Python byte-code decompiler\nSee http://www.goebel-consult.de/decompyle/ for download and\nfor further information\n'	0	LOAD_CONST        '\naugmentedAssign.py -- source test pattern for augmented assigns\n\nThis source is part of the decompyle test suite.\n\ndecompyle is a Python byte-code decompiler\nSee http://www.goebel-consult.de/decompyle/ for download and\nfor further information\n'
+3	STORE_NAME        '__doc__'        	3	STORE_NAME        '__doc__'        
+6	LOAD_CONST        "This program can't be run"	6	LOAD_CONST        "This program can't be run"
+9	RAISE_VARARGS     ''               	9	RAISE_VARARGS     ''               
+12	LOAD_CONST        1               	12	LOAD_CONST        1               
+15	STORE_NAME        'a'             	15	STORE_NAME        'a'             
+18	LOAD_CONST        2               	18	LOAD_CONST        2               
+21	STORE_NAME        'b'             	21	STORE_NAME        'b'             
+24	LOAD_NAME         'a'             	24	LOAD_NAME         'a'             
+27	LOAD_NAME         'b'             	27	LOAD_NAME         'b'             
+30	INPLACE_ADD       ''              	30	INPLACE_ADD       ''              
+31	STORE_NAME        'a'             	31	STORE_NAME        'a'             
+34	LOAD_NAME         'a'             	34	LOAD_NAME         'a'             
+37	PRINT_ITEM        ''              	37	PRINT_ITEM        ''              
+38	PRINT_NEWLINE     ''              	38	PRINT_NEWLINE     ''              
+39	LOAD_NAME         'a'             	39	LOAD_NAME         'a'             
+42	LOAD_NAME         'b'             	42	LOAD_NAME         'b'             
+45	INPLACE_SUBTRACT  ''              	45	INPLACE_SUBTRACT  ''              
+46	STORE_NAME        'a'             	46	STORE_NAME        'a'             
+49	LOAD_NAME         'a'             	49	LOAD_NAME         'a'             
+52	PRINT_ITEM        ''              	52	PRINT_ITEM        ''              
+53	PRINT_NEWLINE     ''              	53	PRINT_NEWLINE     ''              
+54	LOAD_NAME         'a'             	54	LOAD_NAME         'a'             
+57	LOAD_NAME         'b'             	57	LOAD_NAME         'b'             
+60	INPLACE_MULTIPLY  ''              	60	INPLACE_MULTIPLY  ''              
+61	STORE_NAME        'a'             	61	STORE_NAME        'a'             
+64	LOAD_NAME         'a'             	64	LOAD_NAME         'a'             
+67	PRINT_ITEM        ''              	67	PRINT_ITEM        ''              
+68	PRINT_NEWLINE     ''              	68	PRINT_NEWLINE     ''              
+69	LOAD_NAME         'a'             	69	LOAD_NAME         'a'             
+72	LOAD_NAME         'a'             	72	LOAD_NAME         'a'             
+75	INPLACE_SUBTRACT  ''              	75	INPLACE_SUBTRACT  ''              
+76	STORE_NAME        'a'             	76	STORE_NAME        'a'             
+79	LOAD_NAME         'a'             	79	LOAD_NAME         'a'             
+82	PRINT_ITEM        ''              	82	PRINT_ITEM        ''              
+83	PRINT_NEWLINE     ''              	83	PRINT_NEWLINE     ''              
+84	LOAD_NAME         'a'             	84	LOAD_NAME         'a'             
+87	LOAD_CONST        7               	87	LOAD_CONST        7               
+90	LOAD_CONST        3               	90	LOAD_CONST        3               
+93	BINARY_MULTIPLY   ''              	93	BINARY_MULTIPLY   ''              
+94	INPLACE_ADD       ''              	94	INPLACE_ADD       ''              
+95	STORE_NAME        'a'             	95	STORE_NAME        'a'             
+98	LOAD_NAME         'a'             	98	LOAD_NAME         'a'             
+101	PRINT_ITEM        ''             	101	PRINT_ITEM        ''             
+102	PRINT_NEWLINE     ''             	102	PRINT_NEWLINE     ''             
+103	LOAD_CONST        1              	103	LOAD_CONST        1              
+106	LOAD_CONST        2              	106	LOAD_CONST        2              
+109	LOAD_CONST        3              	109	LOAD_CONST        3              
+112	BUILD_LIST_3      ''             	112	BUILD_LIST_3      ''             
+115	STORE_NAME        'l'            	115	STORE_NAME        'l'            
+118	LOAD_NAME         'l'            	118	LOAD_NAME         'l'            
+121	LOAD_CONST        1              	121	LOAD_CONST        1              
+124	DUP_TOPX_2        ''             	124	DUP_TOPX_2        ''             
+127	BINARY_SUBSCR     ''             	127	BINARY_SUBSCR     ''             
+128	LOAD_CONST        3              	128	LOAD_CONST        3              
+131	INPLACE_MULTIPLY  ''             	131	INPLACE_MULTIPLY  ''             
+132	ROT_THREE         ''             	132	ROT_THREE         ''             
+133	STORE_SUBSCR      ''             	133	STORE_SUBSCR      ''             
+134	LOAD_NAME         'l'            	134	LOAD_NAME         'l'            
+137	LOAD_CONST        1              	137	LOAD_CONST        1              
+140	BINARY_SUBSCR     ''             	140	BINARY_SUBSCR     ''             
+141	PRINT_ITEM        ''             	141	PRINT_ITEM        ''             
+142	PRINT_NEWLINE     ''             	142	PRINT_NEWLINE     ''             
+143	LOAD_CONST        ''             	143	LOAD_CONST        7              
+146	POP_TOP           ''             	146	LOAD_NAME         'l'            
+147	LOAD_CONST        7              	149	LOAD_CONST        1              
+150	LOAD_NAME         'l'            	152	BINARY_SUBSCR     ''             
+153	LOAD_CONST        1              	153	LOAD_CONST        2              
+156	BINARY_SUBSCR     ''             	156	BINARY_SUBSCR     ''             
+157	LOAD_CONST        2              	157	LOAD_CONST        3              
+160	BINARY_SUBSCR     ''             	160	STORE_SUBSCR      ''             
+161	LOAD_CONST        3              	161	LOAD_NAME         'l'            
+164	STORE_SUBSCR      ''             	164	LOAD_CONST        1              
+165	LOAD_NAME         'l'            	167	BINARY_SUBSCR     ''             
+168	LOAD_CONST        1              	168	LOAD_CONST        2              
+171	BINARY_SUBSCR     ''             	171	BINARY_SUBSCR     ''             
+172	LOAD_CONST        2              	172	LOAD_CONST        3              
+175	BINARY_SUBSCR     ''             	175	DUP_TOPX_2        ''             
+176	LOAD_CONST        3              	178	BINARY_SUBSCR     ''             
+179	DUP_TOPX_2        ''             	179	LOAD_CONST        3              
+182	BINARY_SUBSCR     ''             	182	INPLACE_MULTIPLY  ''             
+183	LOAD_CONST        3              	183	ROT_THREE         ''             
+186	INPLACE_MULTIPLY  ''             	184	STORE_SUBSCR      ''             
+187	ROT_THREE         ''             	185	LOAD_NAME         'l'            
+188	STORE_SUBSCR      ''             	188	DUP_TOP           ''             
+189	LOAD_CONST        ''             	189	SLICE+0           ''             
+192	POP_TOP           ''             	190	LOAD_CONST        9              
+193	LOAD_NAME         'l'            	193	BUILD_LIST_1      ''             
+196	DUP_TOP           ''             	196	INPLACE_ADD       ''             
+197	SLICE+0           ''             	197	ROT_TWO           ''             
+198	LOAD_CONST        9              	198	STORE_SLICE+0     ''             
+201	BUILD_LIST_1      ''             	199	LOAD_NAME         'l'            
+204	INPLACE_ADD       ''             	202	PRINT_ITEM        ''             
+205	ROT_TWO           ''             	203	PRINT_NEWLINE     ''             
+206	STORE_SLICE+0     ''             	204	LOAD_NAME         'l'            
+207	LOAD_NAME         'l'            	207	LOAD_CONST        2              
+210	PRINT_ITEM        ''             	210	DUP_TOPX_2        ''             
+211	PRINT_NEWLINE     ''             	213	SLICE+2           ''             
+212	LOAD_NAME         'l'            	214	LOAD_CONST        9              
+215	LOAD_CONST        2              	217	BUILD_LIST_1      ''             
+218	DUP_TOPX_2        ''             	220	INPLACE_ADD       ''             
+221	SLICE+2           ''             	221	ROT_THREE         ''             
+222	LOAD_CONST        9              	222	STORE_SLICE+2     ''             
+225	BUILD_LIST_1      ''             	223	LOAD_NAME         'l'            
+228	INPLACE_ADD       ''             	226	PRINT_ITEM        ''             
+229	ROT_THREE         ''             	227	PRINT_NEWLINE     ''             
+230	STORE_SLICE+2     ''             	228	LOAD_NAME         'l'            
+231	LOAD_NAME         'l'            	231	LOAD_CONST        1              
+234	PRINT_ITEM        ''             	234	DUP_TOPX_2        ''             
+235	PRINT_NEWLINE     ''             	237	SLICE+1           ''             
+236	LOAD_NAME         'l'            	238	LOAD_CONST        9              
+239	LOAD_CONST        1              	241	BUILD_LIST_1      ''             
+242	DUP_TOPX_2        ''             	244	INPLACE_ADD       ''             
+245	SLICE+1           ''             	245	ROT_THREE         ''             
+246	LOAD_CONST        9              	246	STORE_SLICE+1     ''             
+249	BUILD_LIST_1      ''             	247	LOAD_NAME         'l'            
+252	INPLACE_ADD       ''             	250	PRINT_ITEM        ''             
+253	ROT_THREE         ''             	251	PRINT_NEWLINE     ''             
+254	STORE_SLICE+1     ''             	252	LOAD_NAME         'l'            
+255	LOAD_NAME         'l'            	255	LOAD_CONST        1              
+258	PRINT_ITEM        ''             	258	LOAD_CONST        4              
+259	PRINT_NEWLINE     ''             	261	DUP_TOPX_3        ''             
+260	LOAD_NAME         'l'            	264	SLICE+3           ''             
+263	LOAD_CONST        1              	265	LOAD_CONST        9              
+266	LOAD_CONST        4              	268	BUILD_LIST_1      ''             
+269	DUP_TOPX_3        ''             	271	INPLACE_ADD       ''             
+272	SLICE+3           ''             	272	ROT_FOUR          ''             
+273	LOAD_CONST        9              	273	STORE_SLICE+3     ''             
+276	BUILD_LIST_1      ''             	274	LOAD_NAME         'l'            
+279	INPLACE_ADD       ''             	277	PRINT_ITEM        ''             
+280	ROT_FOUR          ''             	278	PRINT_NEWLINE     ''             
+281	STORE_SLICE+3     ''             	279	LOAD_NAME         'l'            
+282	LOAD_NAME         'l'            	282	LOAD_CONST        42             
+285	PRINT_ITEM        ''             	285	LOAD_CONST        43             
+286	PRINT_NEWLINE     ''             	288	BUILD_LIST_2      ''             
+287	LOAD_NAME         'l'            	291	INPLACE_ADD       ''             
+290	LOAD_CONST        42             	292	STORE_NAME        'l'            
+293	LOAD_CONST        43             	295	LOAD_NAME         'l'            
+296	BUILD_LIST_2      ''             	298	PRINT_ITEM        ''             
+299	INPLACE_ADD       ''             	299	PRINT_NEWLINE     ''             
+300	STORE_NAME        'l'            	300	LOAD_CONST        1              
+303	LOAD_NAME         'l'            	303	LOAD_NAME         'a'            
+306	PRINT_ITEM        ''             	306	STORE_ATTR        'value'        
+307	PRINT_NEWLINE     ''             	309	LOAD_NAME         'a'            
+308	LOAD_CONST        1              	312	DUP_TOP           ''             
+311	LOAD_NAME         'a'            	313	LOAD_ATTR         'value'        
+314	STORE_ATTR        'value'        	316	LOAD_CONST        1              
+317	LOAD_NAME         'a'            	319	INPLACE_ADD       ''             
+320	DUP_TOP           ''             	320	ROT_TWO           ''             
+321	LOAD_ATTR         'value'        	321	STORE_ATTR        'value'        
+324	LOAD_CONST        1              	324	LOAD_CONST        1              
+327	INPLACE_ADD       ''             	327	LOAD_NAME         'a'            
+328	ROT_TWO           ''             	330	LOAD_ATTR         'b'            
+329	STORE_ATTR        'value'        	333	STORE_ATTR        'val'          
+332	LOAD_CONST        ''             	336	LOAD_NAME         'a'            
+335	POP_TOP           ''             	339	LOAD_ATTR         'b'            
+336	LOAD_CONST        1              	342	DUP_TOP           ''             
+339	LOAD_NAME         'a'            	343	LOAD_ATTR         'val'          
+342	LOAD_ATTR         'b'            	346	LOAD_CONST        1              
+345	STORE_ATTR        'val'          	349	INPLACE_ADD       ''             
+348	LOAD_NAME         'a'            	350	ROT_TWO           ''             
+351	LOAD_ATTR         'b'            	351	STORE_ATTR        'val'          
+354	DUP_TOP           ''             	354	BUILD_LIST_0      ''             
+355	LOAD_ATTR         'val'          	357	STORE_NAME        'l'            
+358	LOAD_CONST        1              	360	SETUP_LOOP        '480'          
+361	INPLACE_ADD       ''             	363	LOAD_NAME         'range'        
+362	ROT_TWO           ''             	366	LOAD_CONST        3              
+363	STORE_ATTR        'val'          	369	CALL_FUNCTION_1   ''             
+366	LOAD_CONST        ''             	372	GET_ITER          ''             
+369	POP_TOP           ''             	373	FOR_ITER          '479'          
+370	BUILD_LIST_0      ''             	376	STORE_NAME        'i'            
+373	STORE_NAME        'l'            	379	BUILD_LIST_0      ''             
+376	SETUP_LOOP        '496'          	382	STORE_NAME        'lj'           
+379	LOAD_NAME         'range'        	385	SETUP_LOOP        '463'          
+382	LOAD_CONST        3              	388	LOAD_NAME         'range'        
+385	CALL_FUNCTION_1   ''             	391	LOAD_CONST        3              
+388	GET_ITER          ''             	394	CALL_FUNCTION_1   ''             
+389	FOR_ITER          '495'          	397	GET_ITER          ''             
+392	STORE_NAME        'i'            	398	FOR_ITER          '462'          
+395	BUILD_LIST_0      ''             	401	STORE_NAME        'j'            
+398	STORE_NAME        'lj'           	404	BUILD_LIST_0      ''             
+401	SETUP_LOOP        '479'          	407	STORE_NAME        'lk'           
+404	LOAD_NAME         'range'        	410	SETUP_LOOP        '446'          
+407	LOAD_CONST        3              	413	LOAD_NAME         'range'        
+410	CALL_FUNCTION_1   ''             	416	LOAD_CONST        3              
+413	GET_ITER          ''             	419	CALL_FUNCTION_1   ''             
+414	FOR_ITER          '478'          	422	GET_ITER          ''             
+417	STORE_NAME        'j'            	423	FOR_ITER          '445'          
+420	BUILD_LIST_0      ''             	426	STORE_NAME        'k'            
+423	STORE_NAME        'lk'           	429	LOAD_NAME         'lk'           
+426	SETUP_LOOP        '462'          	432	LOAD_ATTR         'append'       
+429	LOAD_NAME         'range'        	435	LOAD_CONST        ''             
+432	LOAD_CONST        3              	438	CALL_FUNCTION_1   ''             
+435	CALL_FUNCTION_1   ''             	441	POP_TOP           ''             
+438	GET_ITER          ''             	442	JUMP_ABSOLUTE     '423'          
+439	FOR_ITER          '461'          	445_0	COME_FROM         ''           
+442	STORE_NAME        'k'            	445	POP_BLOCK         ''             
+445	LOAD_NAME         'lk'           	446_0	COME_FROM         ''           
+448	LOAD_ATTR         'append'       	446	LOAD_NAME         'lj'           
+451	LOAD_CONST        ''             	449	LOAD_ATTR         'append'       
+454	CALL_FUNCTION_1   ''             	452	LOAD_NAME         'lk'           
+457	POP_TOP           ''             	455	CALL_FUNCTION_1   ''             
+458	JUMP_ABSOLUTE     '439'          	458	POP_TOP           ''             
+461_0	COME_FROM         ''           	459	JUMP_ABSOLUTE     '398'          
+461	POP_BLOCK         ''             	462_0	COME_FROM         ''           
+462_0	COME_FROM         ''           	462	POP_BLOCK         ''             
+462	LOAD_NAME         'lj'           	463_0	COME_FROM         ''           
+465	LOAD_ATTR         'append'       	463	LOAD_NAME         'l'            
+468	LOAD_NAME         'lk'           	466	LOAD_ATTR         'append'       
+471	CALL_FUNCTION_1   ''             	469	LOAD_NAME         'lj'           
+474	POP_TOP           ''             	472	CALL_FUNCTION_1   ''             
+475	JUMP_ABSOLUTE     '414'          	475	POP_TOP           ''             
+478_0	COME_FROM         ''           	476	JUMP_ABSOLUTE     '373'          
+478	POP_BLOCK         ''             	479_0	COME_FROM         ''           
+479_0	COME_FROM         ''           	479	POP_BLOCK         ''             
+479	LOAD_NAME         'l'            	480_0	COME_FROM         ''           
+482	LOAD_ATTR         'append'       	480	LOAD_CONST        1              
+485	LOAD_NAME         'lj'           	483	DUP_TOP           ''             
+488	CALL_FUNCTION_1   ''             	484	STORE_NAME        'i'            
+491	POP_TOP           ''             	487	DUP_TOP           ''             
+492	JUMP_ABSOLUTE     '389'          	488	STORE_NAME        'j'            
+495_0	COME_FROM         ''           	491	STORE_NAME        'k'            
+495	POP_BLOCK         ''             	494	LOAD_CONST        'code_object f'
+496_0	COME_FROM         ''           	497	MAKE_FUNCTION_0   ''             
+496	LOAD_CONST        1              	500	STORE_NAME        'f'            
+499	DUP_TOP           ''             	503	LOAD_CONST        1              
+500	STORE_NAME        'i'            	506	LOAD_NAME         'l'            
+503	DUP_TOP           ''             	509	LOAD_NAME         'i'            
+504	STORE_NAME        'j'            	512	BINARY_SUBSCR     ''             
+507	STORE_NAME        'k'            	513	LOAD_NAME         'j'            
+510	LOAD_CONST        'code_object f'	516	BINARY_SUBSCR     ''             
+513	MAKE_FUNCTION_0   ''             	517	LOAD_NAME         'k'            
+516	STORE_NAME        'f'            	520	STORE_SUBSCR      ''             
+519	LOAD_CONST        1              	521	LOAD_CONST        1              
+522	LOAD_NAME         'l'            	524	STORE_NAME        'i'            
+525	LOAD_NAME         'i'            	527	LOAD_NAME         'l'            
+528	BINARY_SUBSCR     ''             	530	LOAD_NAME         'f'            
+529	LOAD_NAME         'j'            	533	CALL_FUNCTION_0   ''             
+532	BINARY_SUBSCR     ''             	536	BINARY_SUBSCR     ''             
+533	LOAD_NAME         'k'            	537	LOAD_NAME         'j'            
+536	STORE_SUBSCR      ''             	540	BINARY_SUBSCR     ''             
+537	LOAD_CONST        1              	541	LOAD_NAME         'k'            
+540	STORE_NAME        'i'            	544	DUP_TOPX_2        ''             
+543	LOAD_NAME         'l'            	547	BINARY_SUBSCR     ''             
+546	LOAD_NAME         'f'            	548	LOAD_CONST        1              
+549	CALL_FUNCTION_0   ''             	551	INPLACE_ADD       ''             
+552	BINARY_SUBSCR     ''             	552	ROT_THREE         ''             
+553	LOAD_NAME         'j'            	553	STORE_SUBSCR      ''             
+556	BINARY_SUBSCR     ''             	554	LOAD_NAME         'i'            
+557	LOAD_NAME         'k'            	557	PRINT_ITEM        ''             
+560	DUP_TOPX_2        ''             	558	LOAD_NAME         'l'            
+563	BINARY_SUBSCR     ''             	561	PRINT_ITEM        ''             
+564	LOAD_CONST        1              	562	PRINT_NEWLINE     ''             
+567	INPLACE_ADD       ''             	563	LOAD_CONST        ''             
+568	ROT_THREE         ''             	566	RETURN_VALUE      ''             
+569	STORE_SUBSCR      ''             	None                                 
+570	LOAD_NAME         'i'            	None                                 
+573	PRINT_ITEM        ''             	None                                 
+574	LOAD_NAME         'l'            	None                                 
+577	PRINT_ITEM        ''             	None                                 
+578	PRINT_NEWLINE     ''             	None                                 
+579	LOAD_CONST        ''             	None                                 
+582	RETURN_VALUE      ''             	None                                 
+
+### Error Verifiying bytecode_2.4\test_class.pyc
+Code len differs in .<module>.A
+0	LOAD_GLOBAL       '__name__'       	0	LOAD_GLOBAL       '__name__'       
+3	STORE_NAME        '__module__'     	3	STORE_NAME        '__module__'     
+6	LOAD_CONST        'A1'             	6	LOAD_NAME         '__name__'       
+9	BUILD_TUPLE_0     ''               	9	STORE_NAME        '__module__'     
+12	LOAD_CONST        'code_object A1'	12	LOAD_CONST        'A1'            
+15	MAKE_FUNCTION_0   ''              	15	BUILD_TUPLE_0     ''              
+18	CALL_FUNCTION_0   ''              	18	LOAD_CONST        'code_object A1'
+21	BUILD_CLASS       ''              	21	MAKE_FUNCTION_0   ''              
+22	STORE_NAME        'A1'            	24	CALL_FUNCTION_0   ''              
+25	LOAD_CONST        'code_object __init__'	27	BUILD_CLASS       ''              
+28	MAKE_FUNCTION_0   ''              	28	STORE_NAME        'A1'            
+31	STORE_NAME        '__init__'      	31	LOAD_CONST        'code_object __init__'
+34	LOAD_CONST        'code_object foo'	34	MAKE_FUNCTION_0   ''              
+37	MAKE_FUNCTION_0   ''              	37	STORE_NAME        '__init__'      
+40	STORE_NAME        'foo'           	40	LOAD_CONST        'code_object foo'
+43	LOAD_LOCALS       ''              	43	MAKE_FUNCTION_0   ''              
+44	RETURN_VALUE      ''              	46	STORE_NAME        'foo'           
+None                                 	49	LOAD_LOCALS       ''              
+None                                 	50	RETURN_VALUE      ''              
+
+>>Syntax error in /tmp/py-dis/test\bytecode_2.4\test_del.pyc_dis
+Traceback (most recent call last):
+  File "test_pythonlib.py", line 102, in ?
+    do_tests(src_dir, pattern, target_dir, start_with, do_verify)
+  File "test_pythonlib.py", line 72, in do_tests
+    decompyle.main(src_dir, target_dir, files, do_verify=do_verify)
+  File "D:\work\python\mydecompyle\src\decompyle\__init__.py", line 210, in main
+    verify.compare_code_with_srcfile(infile, outfile)
+  File "D:\work\python\mydecompyle\src\decompyle\verify.py", line 205, in compare_code_with_srcfile
+    code_obj2 = decompyle._load_file(src_filename)
+  File "D:\work\python\mydecompyle\src\decompyle\__init__.py", line 54, in _load_file
+    co = compile(source, filename, 'exec')
+  File "d:\python24\lib\compiler\pycodegen.py", line 64, in compile
+    gen.compile()
+  File "d:\python24\lib\compiler\pycodegen.py", line 111, in compile
+    tree = self._get_tree()
+  File "d:\python24\lib\compiler\pycodegen.py", line 77, in _get_tree
+    tree = parse(self.source, self.mode)
+  File "d:\python24\lib\compiler\transformer.py", line 52, in parse
+    return Transformer().parsesuite(buf)
+  File "d:\python24\lib\compiler\transformer.py", line 129, in parsesuite
+    return self.transform(parser.suite(text))
+  File "<string>", line 26
+    ...,
+    ^
+SyntaxError: invalid syntax

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: decompyle
+Version: 2.3
+Summary: Python byte-code to source-code converter
+Home-page: http://adal.eu.org/decompyle.php
+Author: Adal Chiriliuc
+Author-email: contact@adal.eu.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
