@@ -189,9 +189,9 @@ TABLE_DIRECT = {
     'importstar2':	( '%|from %[1]{pattr} import *\n', ),
     'importfrom2':	( '%|from %[1]{pattr} import %c\n', 2 ),
     'importlist2':	( '%C', (0, sys.maxint, ', ') ),
-    'importstmt25': ( '%|import %c ', 2),    
-    'importstar25': ( '%|from %[2]{pattr} import * ', ),
-    'importfrom25': ( '%|from %[2]{pattr} import %c ', 3 ),
+    'importstmt25': ( '%|import %c\n', 2),    
+    'importstar25': ( '%|from %[2]{pattr} import *\n', ),
+    'importfrom25': ( '%|from %[2]{pattr} import %c\n', 3 ),
     
     'assert':		( '%|assert %c\n' , 3 ),
     'assert2':		( '%|assert %c, %c\n' , 3, -5 ),
@@ -229,6 +229,9 @@ TABLE_DIRECT = {
     'forelsestmt':	(
         '%|for %c in %c:\n%+%c%-%|else:\n%+%c%-\n', 3, 1, 4, -2
      ),
+    
+    'ifforstmt':	( '%|if %c:\n%+%|for %c in %c:\n%+%c%-%-\n', 0, 5, 3, 6 ),
+    
     'trystmt':		( '%|try:\n%+%c%-%c', 1, 5 ),
     'except':		( '%|except:\n%+%c%-', 3 ),
     'except_cond1':	( '%|except %c:\n%+%c%-', 1, 8 ),

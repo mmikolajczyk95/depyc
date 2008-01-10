@@ -305,7 +305,12 @@ class Parser(GenericASTBuilder):
 		forelsestmt ::= SETUP_LOOP expr _for designator
 		stmts_opt JUMP_ABSOLUTE
 		COME_FROM POP_BLOCK stmts COME_FROM
-
+		
+		stmt ::= ifforstmt
+		ifforstmt ::= expr condjmp SETUP_LOOP expr _for designator
+		stmts_opt JUMP_ABSOLUTE
+		COME_FROM POP_BLOCK _jump COME_FROM
+		POP_TOP COME_FROM COME_FROM
 
 		_jump ::= JUMP_ABSOLUTE
 		_jump ::= JUMP_FORWARD
