@@ -382,7 +382,6 @@ class Walker(GenericASTTraversal, object):
             self.print_(indent, repr(docstring))
             
     def n_LOAD_CONST(self, node):
-        print "In n_LOAD_CONST"
         data = node.pattr; datatype = type(data)
         if datatype is IntType and data == minint:
             # convert to hex, since decimal representation
@@ -403,7 +402,6 @@ class Walker(GenericASTTraversal, object):
 
 
     def n_delete_subscr(self, node):
-        print "In n_delete_subscr"
         maybe_tuple = node[-2][-1]
         if maybe_tuple.type.startswith('BUILD_TUPLE'):
             maybe_tuple.type = 'build_tuple2'
@@ -417,7 +415,6 @@ class Walker(GenericASTTraversal, object):
         exec_stmt ::= expr exprlist DUP_TOP EXEC_STMT
         exec_stmt ::= expr exprlist EXEC_STMT
         """
-        print "In n_exec_stmt"
         self.write(self.indent, 'exec ')
         self.preorder(node[0])
         if node[1][0] != NONE:
@@ -429,7 +426,6 @@ class Walker(GenericASTTraversal, object):
         self.prune() # stop recursing
             
     def n_list_compr(self, node):
-        print "In n_list_compr"
         n = node[-2]
         assert n == 'list_iter'
         # find innerst node
@@ -445,7 +441,6 @@ class Walker(GenericASTTraversal, object):
         self.prune() # stop recursing
        
     def n_ifelsestmt(self, node, preprocess=0):
-        print "In n_ifelsestmt"
         if len(node[-2]) == 1:
             ifnode = node[-2][0][0]
             if ifnode == 'ifelsestmt':
@@ -462,7 +457,6 @@ class Walker(GenericASTTraversal, object):
             self.default(node)
 
     def n_import_as(self, node):
-        print "In n_import_as"
         iname = node[0].pattr;
         assert node[-1][-1].type.startswith('STORE_')
         sname = node[-1][-1].pattr # assume one of STORE_.... here
@@ -473,9 +467,6 @@ class Walker(GenericASTTraversal, object):
         self.prune() # stop recursing
 
     def n_mkfunc(self, node):
-        print("In n_mkfunc")
-        print node;
-        print node[-2].attr.co_name
         self.write(node[-2].attr.co_name) # = code.co_name
         self.indentMore()
         self.make_function(node, isLambda=0)
@@ -483,12 +474,10 @@ class Walker(GenericASTTraversal, object):
         self.prune() # stop recursing
 
     def n_mklambda(self, node):
-        print "In n_mklambda"
         self.make_function(node, isLambda=1)
         self.prune() # stop recursing
 
     def n_classdef(self, node):
-        print "In n_classdef"
         # class definition ('class X(A,B,C):')
         assert node[0].pattr == node[-1][-1].pattr
         self.write(self.indent, 'class ', str(node[-1][-1].pattr))
@@ -508,7 +497,6 @@ class Walker(GenericASTTraversal, object):
         'mapexpr' is something like k = {'a': 1, 'b': 42 }"
         """
         # " <- emacs happy
-        print "In n_mapexpr"
         assert node[-1] == 'kvlist'
         node = node[-1] # goto kvlist
 
@@ -537,7 +525,6 @@ class Walker(GenericASTTraversal, object):
         """
         prettyprint a list or tuple
         """
-        print "In n_build_list"
         lastnode = node.pop().type
         if lastnode.startswith('BUILD_LIST'):
             self.write('['); endchar = ']'

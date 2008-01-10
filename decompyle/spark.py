@@ -184,7 +184,6 @@ class GenericParser:
 		raise SystemExit
 
 	def parse(self, tokens):
-		print "In parse"
 		tree = {}
 		tokens.append(self._EOF)
 		states = { 0: [ (self.startRule, 0, 0) ] }
@@ -469,7 +468,7 @@ class GenericASTTraversal:
 			name = 'n_' + self.typestring(node)
 			if hasattr(self, name):
 				func = getattr(self, name)
-				print("Calling "+name)
+				#print("Calling "+name)
 				func(node)
 			else:
 				self.default(node)
