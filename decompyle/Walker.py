@@ -220,6 +220,10 @@ TABLE_DIRECT = {
     'elifelifstmt':	( '%|elif %c:\n%+%c%-%c', 0, 2, -2 ),
     'elifstmt':		( '%|elif %c:\n%+%c%-', 0, 2 ),
     'elifelsestmt':	( '%|elif %c:\n%+%c%-%|else:\n%+%c%-', 0, 2, -2 ),
+    
+    'ifnotstmt':		( '%|if not(%c):\n%+%c%-', 0, 2 ),
+    'ifnotelsestmt':	( '%|if not(%c):\n%+%c%-%|else:\n%+%c%-', 0, 2, -2 ),
+    
 
     'whilestmt':	( '%|while %c:\n%+%c%-\n', 1, 4 ),
     'while1stmt':	( '%|while 1:\n%+%c%-\n', 5 ),
