@@ -315,15 +315,31 @@ class Parser(GenericASTBuilder):
 		_jump ::= JUMP_ABSOLUTE
 		_jump ::= JUMP_FORWARD
 
-		ifstmt ::= expr condjmp stmts_opt
+		jmp_false    ::= JUMP_IF_FALSE POP_TOP
+		jmp_true    ::= JUMP_IF_TRUE  POP_TOP
+		
+		ifstmt ::= expr jmp_false stmts_opt
 				_jump COME_FROM POP_TOP
 		
-		ifstmt ::= expr condjmp stmts_opt
+		ifstmt ::= expr jmp_false stmts_opt
 				_jump COME_FROM POP_TOP COME_FROM
 		
-		ifelsestmt ::= expr condjmp stmts_opt
+		ifelsestmt ::= expr jmp_false stmts_opt
 						_jump COME_FROM
 						POP_TOP stmts COME_FROM
+						
+		stmt ::= ifnotstmt
+		stmt ::= ifnotelsestmt
+		ifnotstmt ::= expr jmp_true stmts_opt
+				_jump COME_FROM POP_TOP
+				
+		ifnotstmt ::= expr jmp_true stmts_opt
+				_jump COME_FROM POP_TOP COME_FROM
+				
+		ifnotelsestmt ::= expr jmp_true stmts_opt
+				_jump COME_FROM
+				POP_TOP stmts COME_FROM
+		
 		
 		trystmt ::= SETUP_EXCEPT stmts_opt
 				POP_BLOCK _jump
