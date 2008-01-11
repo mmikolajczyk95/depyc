@@ -224,7 +224,12 @@ TABLE_DIRECT = {
     'ifnotstmt':		( '%|if not(%c):\n%+%c%-', 0, 2 ),
     'ifnotelsestmt':	( '%|if not(%c):\n%+%c%-%|else:\n%+%c%-', 0, 2, -2 ),
     
+    'ifandstmt':    ( '%|if(%c and %c):\n%+%c%-', 0, 3, 6),
 
+    'ifforstmt':	( '%|if %c:\n%+%|for %c in %c:\n%+%c%-%-\n', 0, 5, 3, 6 ),
+
+    'ifforelsestmt':( '%|if %c:\n%+%|for %c in %c:\n%+%c%-%-\n%|else:\n%+%c%-', 0, 5, 3, 6, -3 ),
+    
     'whilestmt':	( '%|while %c:\n%+%c%-\n', 1, 4 ),
     'while1stmt':	( '%|while 1:\n%+%c%-\n', 5 ),
     'whileelsestmt':	( '%|while %c:\n%+%c%-%|else:\n%+%c%-\n', 1, 4, -2 ),
@@ -233,8 +238,6 @@ TABLE_DIRECT = {
     'forelsestmt':	(
         '%|for %c in %c:\n%+%c%-%|else:\n%+%c%-\n', 3, 1, 4, -2
      ),
-    
-    'ifforstmt':	( '%|if %c:\n%+%|for %c in %c:\n%+%c%-%-\n', 0, 5, 3, 6 ),
     
     'trystmt':		( '%|try:\n%+%c%-%c', 1, 5 ),
     'except':		( '%|except:\n%+%c%-', 3 ),
