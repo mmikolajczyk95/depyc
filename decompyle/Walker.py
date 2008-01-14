@@ -771,7 +771,7 @@ class Walker(GenericASTTraversal, object):
             self.print_("(", ", ".join(params), "):")
             #self.print_(indent, '#flags:\t', int(code.co_flags))
 
-        if code.co_consts[0] != None: # docstring exists, dump it
+        if len(code.co_consts)>0 and code.co_consts[0] != None: # docstring exists, dump it
             self.print_docstring(indent, code.co_consts[0])
 
         for g in find_globals(ast, {}).keys():
