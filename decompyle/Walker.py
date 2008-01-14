@@ -401,7 +401,8 @@ class Walker(GenericASTTraversal, object):
         elif data is None:
             # LOAD_CONST 'None' only occurs, when None is
             # implicit eg. in 'return' w/o params
-            pass
+            #pass
+            self.write('None')
         else:
             self.write(repr(data))
         # LOAD_CONST is a terminal, so stop processing/recursing early
